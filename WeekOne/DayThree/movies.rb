@@ -36,3 +36,19 @@ for x in 0..9
 	ratingnumba -= 1
 	current = 0
 end
+
+puts "----------------------"
+while current < movie_info.length
+	if current == movie_info.length - 1
+		print "|#{current + 1}|"
+	else
+	print "|#{current + 1}"
+end
+	current += 1
+end
+puts " "
+current = 0
+while current < movie_info.length
+puts "#{current + 1}. #{movie_info[current][:title]} Rating: #{movie_info[current][:rating]}"
+current += 1
+	end
