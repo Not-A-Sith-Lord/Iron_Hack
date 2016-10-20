@@ -37,7 +37,7 @@ for x in 0..9
 	current = 0
 end
 
-puts "----------------------"
+puts "--" * movie_info.length
 while current < movie_info.length
 	if current == movie_info.length - 1
 		print "|#{current + 1}|"
