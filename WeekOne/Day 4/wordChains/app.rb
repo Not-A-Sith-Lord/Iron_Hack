@@ -6,7 +6,7 @@ the_dictionary = Dictionary.from_file("/usr/share/dict/words")
 
 exercise = WordChain.new(the_dictionary)
 
-exercise.find_chain("fish", "duct")
+exercise.find_chain("bang", "farm")
 
 
 

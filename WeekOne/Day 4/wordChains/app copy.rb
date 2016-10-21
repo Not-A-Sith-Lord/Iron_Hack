@@ -12,16 +12,14 @@ class WordChain
     def find_chain(word1, word2)
        
 puts word1
-	while word1 != word2
+	while word1 != word2 
 	       letter = 0
 	       
 
 	     while letter < word1.length + 1 
-	       
 	       	
 	       	first_word = word1.clone
 	       
-	      
 
 	       	if first_word[letter] == word2[letter]
 	       		

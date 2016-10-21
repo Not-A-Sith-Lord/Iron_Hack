@@ -7,7 +7,10 @@ class WordChain
     def find_chain(word1, word2)
        
 puts word1
-	while word1 != word2
+attempt = 0
+	while word1 != word2 && attempt < word1.length
+
+
 	       letter = 0
 	       
 
@@ -33,8 +36,14 @@ puts word1
 
 	       	letter += 1
 	       end
+	  attempt = attempt + 1
+	  puts attempt
 
 	   end
-
+	   
+if word1 != word2
+	puts "impossible"
+end
 	    end
 end
+
