@@ -37,7 +37,6 @@ attempt = 0
 	       	letter += 1
 	       end
 	  attempt = attempt + 1
-	  puts attempt
 
 	   end
 	   
