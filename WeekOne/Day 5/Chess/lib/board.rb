@@ -11,9 +11,13 @@ def add_piece(piece)
 
 end
 
+#Selecting off board coordinant breaks logic hmmmm
+
 def move_piece?(x, y, dest_x, dest_y)
 
-	if @coordinants[x][y] == nil
+	the_piece = @coordinants[x][y] 
+	
+	if the_piece == nil
 		puts "No piece here"
 
 	elsif dest_x == x || dest_y == y

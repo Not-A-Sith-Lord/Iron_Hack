@@ -21,3 +21,6 @@ first_pawn = Pawn.new(2, 7, "white")
  board.add_piece(first_knight)
 
 board.move_piece?(1, 4, 2, 6)
+
+board.move_piece?(1, 4, 100, 100)
+
