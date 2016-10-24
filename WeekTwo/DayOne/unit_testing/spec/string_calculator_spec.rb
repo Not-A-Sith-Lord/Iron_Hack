@@ -4,7 +4,17 @@ require_relative("../lib/string_calculator.rb")
 
 RSpec.describe StringCalculator do
 	describe "#add" do 
-		the_calc = StringCalculator.new 
+
+	the_calc = StringCalculator.new 
+
+		# before :each do
+		# 		the_calc = StringCalculator.new 
+		# end
+		# or
+		# let :the_calc do
+		# 	StringCalculator.new 
+		# end
+
 		it "adds numbers seperated by ," do 
 			expect(the_calc.add("7,7")).to eq(14)
 			expect(the_calc.add("8,4")).to eq(12)
