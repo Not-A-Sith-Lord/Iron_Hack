@@ -6,3 +6,8 @@
 <li><a href="/about">Link to about</a></li>
 <li><a href="/best_pizza">Link to pizza</a></li>
 </ul>
+<% if @drank != nil %>
+<p>Your currently selected beverage is:
+ <%= @drank %>
+ 	<% end %>
+ </p>

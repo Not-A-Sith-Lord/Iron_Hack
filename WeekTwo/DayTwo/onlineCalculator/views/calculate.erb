@@ -1,0 +1,13 @@
+
+
+<% calc = Calculator.new
+
+ operation = params[:operation]
+ first = params[:first_number].to_f
+ second = params[:second_number].to_f %>
+
+ <%=calc.send(operation, first, second) %>
+
+<form action="/save" method="POST">
+	<button type="submit" name="answer" value="idk">Save answer to reuse</button>
+</form>
