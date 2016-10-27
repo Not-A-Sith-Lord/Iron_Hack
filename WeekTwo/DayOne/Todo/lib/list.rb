@@ -13,16 +13,18 @@ class TodoList
     	@tasks.delete_if { |item|
     		item.id == id
     	}
+        
     end
 
-    def find_task_by_id(id)
-    	item = nil
-    	@tasks.each { |x|
-    		if x.id == id
-    			item = x
+    def find_task_by_id(search)
+    	result = nil
+    	 @tasks.each { |item|
+    		if item.id == search
+                result = item
+    			
     		end
     	}
-    	item
-
+    	
+        result
     end
 end

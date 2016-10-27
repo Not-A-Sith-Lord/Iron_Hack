@@ -6,4 +6,4 @@ gem "sinatra-contrib"
 
 gem "pry"
 
-gem "rspec"
+gem "RSpec"
