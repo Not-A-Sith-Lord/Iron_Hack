@@ -1,3 +1,9 @@
-<% @posts.each do |post| %>
-<%= post.title %>
+<!-- Best way to import info??> -->
+<h1><%= @blog.name %></h1>
+
+
+<% @blog.latest_posts.each do |post| %>
+<a href="/post_details/<%=post.id%>"><%= post.title %></a>
+<br><br><br>
 <% end %>
+

@@ -11,8 +11,13 @@ class TodoList
 
     def remove_task!(id)
     	@tasks.delete_if { |item|
+            puts "Item in remove_task to search is #{id}"
+            puts "Item id is #{item.id}"
     		item.id == id
+            
     	}
+
+        puts @tasks
         
     end
 

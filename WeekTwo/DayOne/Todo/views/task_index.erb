@@ -1,6 +1,21 @@
+
+
 <h1>Displaying all tasks</h1>
 
-<%= @tasks %>
+<% if @tasks[0] != nil %>
+<ul>
+<form action="/delete_task" method="POST">
+<% @tasks.each do|x| %>
+	<% @task_id = x.id %>
+	<li><%= x.content %>
+	<input type='checkbox' name='to_remove[]' value="<%= x.id %>"></li>
 
+	<% end %>
+	<button type="submit">Delete Selected</button>
+	</form>
+</ul>
+<% end %>
+<br>
 <a href="/new_task">ADD NEW TASK</a>
+
 
