@@ -1,0 +1,21 @@
+
+<link rel="stylesheet" href="/main.css">
+
+<h2>The Game: </h2>
+<p>Click on the movie that premiered in the year <%= @answer %> </p>
+
+
+
+<h2>The Movies:</h2>
+<ul class="movie_list">
+<% @sorted_movies.each do |movie| %>
+
+
+<% if movie.year == @answer %>
+<li class="poster"><img src=" <%= movie.poster %> " Onclick="alert('Correct')" /></li>
+<% else %>
+<li class="poster"><img src=" <%= movie.poster %> " Onclick="alert('Incorrect')" /></li>
+<% end %>
+
+<% end %>
+</ul>

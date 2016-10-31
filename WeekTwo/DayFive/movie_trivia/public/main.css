@@ -1,0 +1,21 @@
+body {
+	text-align: center;
+	background-image: url("http://i.huffpost.com/gen/1164304/images/o-MOVIE-THEATER-facebook.jpg");
+	background-size: cover;
+}
+
+.movie_list {
+	background-color: white;
+	width: 50%;
+	margin: 0 auto;
+	border-radius: 7%;
+	clear: both;
+}
+.poster {
+	width: 30%;
+	display: inline-block;
+}
+
+.poster img {
+	width: 100%;
+}
