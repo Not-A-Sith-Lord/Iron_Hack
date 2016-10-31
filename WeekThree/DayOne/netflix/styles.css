@@ -1,0 +1,126 @@
+@font-face {
+    font-family: 'netflix';
+    src: url('ProximaNova-Reg.otf');
+}
+
+@font-face {
+    font-family: 'netflix2';
+    src: url('ProximaNova-Sbold.otf');
+}
+
+
+body {
+	margin: 0;
+	padding: 0;
+	font-family: 'netflix';
+}
+
+.top {
+	background-image: url(images/family.jpg);
+	background-size: 100%;
+	background-repeat: no-repeat;
+	margin: 0;
+	height: 600px;
+}
+
+header img {
+	width: 215px;
+	display: inline-block;
+	padding: .4rem 0 0 2.5rem;
+	margin-top: -1rem;
+}
+
+header a {
+	float: right;
+	margin: 1.5rem 2.3rem 0 0;
+	padding: .7rem 3rem .7rem 3rem;
+	color: white;
+	background-color: red;
+	text-align: center;
+	font-size: 20px;
+	text-decoration: none;
+}
+
+.ad_container {
+	margin: 0 auto;
+	margin-top: 7rem;
+	text-align: center;
+	background-color: black;
+	opacity: .8;
+	padding: 2rem;
+	width: 45%;
+}
+
+.ad_container p {
+	color: white;
+	font-size: 38px;
+	font-weight: 900;
+}
+
+.ad_container a {
+	color: white;
+	background-color: #0099e6;
+	padding: .6rem 1rem .6rem 1rem;
+	text-decoration: none;
+}
+
+.bottom h2 {
+	padding: 1rem 0 0 7rem;
+	font-family: 'netflix2';
+	font-size: 1.8rem;
+}
+
+.movies {
+	/*padding-left: 6rem;*/
+	width: 90%;
+	padding-left: 5rem;
+	padding-top: 0;
+	margin: 0 auto;
+}
+
+.movies img {
+	display: inline-block;
+	padding: 1rem;
+	width: 150px;
+	height: 240px;
+	
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
