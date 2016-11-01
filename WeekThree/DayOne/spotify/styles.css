@@ -1,0 +1,118 @@
+body {
+	margin: 0;
+	padding: 0;
+}
+
+header {
+	height: 70px;
+	background-color: white;
+	padding: .2rem;
+	
+}
+
+header img {
+	width: 180px;
+	padding: .5rem 0 0 1rem;
+
+}
+
+.tabs {
+	float: right;
+	padding: .7rem 1rem 0 0;
+}
+
+.tabs li {
+	display: inline-block;
+	padding: 0 1.2rem 0 0;
+	font-size: 18px;
+}
+
+.banner {
+	height: 700px;
+	background-image: url('images/Landing.jpg');
+	background-size: 100%;
+	color: white;
+	text-align: center;
+}
+
+.text {
+	padding-top: 8rem;
+	margin: 0 auto;
+	width: 50%;
+}
+
+.text h1 {
+	font-size: 60px;
+}
+
+.text p {
+	margin-top: 2rem;
+
+}
+
+.info {
+	text-align: center;
+}
+
+.info h2 {
+	text-decoration: underline;
+	-moz-text-decoration-color: green; /* Code for Firefox */
+    text-decoration-color: green;
+}
+
+.icon {
+	display: inline-block;
+	width: 20%; 
+	padding: 3rem;
+
+}
+.icon img {
+	width: 80px;
+}
+
+.yeezy {
+	color: white;
+	background-color: green;
+	margin: 1.2rem;
+	text-align: left;
+	padding: 2rem 0 0 5rem;
+}
+
+.points {
+	display: inline-block;
+	width: 30%;
+}
+
+.point {
+
+}
+
+.white-icon {
+	width: 80px;
+	display: inline-block;
+}
+
+.yeezyimg {
+	float: right;
+	width: 200px;
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

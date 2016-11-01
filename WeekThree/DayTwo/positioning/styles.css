@@ -1,0 +1,40 @@
+
+body,
+html,
+.image {
+	height: 100%;
+}
+
+.image {
+	background-size: contain;
+	background-repeat: no-repeat;
+	background-position: center;
+	color: pink;
+	background-image: url(kylo.gif);
+}
+
+.image p {
+	font-size: 12px;
+}
+
+@media screen and (min-width: 768px) {
+	.image {
+		background-image: url(chewy.gif);
+	}
+
+	.image p {
+	font-size: 22px;
+	color: purple;
+}
+}
+
+@media screen and (min-width: 1100px) {
+	.image {
+		background-image: url(https://media.giphy.com/media/l0MYEZkOB8xCYM7O8/giphy.gif);
+	}
+
+	.image p {
+	font-size: 50px;
+	color: green;
+}
+}
