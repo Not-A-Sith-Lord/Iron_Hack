@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Responsive Web Design Principles</title>
+  <link rel="stylesheet" href="css/reset.css">
+  <link rel="stylesheet" href="css/style.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+
+<body>
+
+  <header>
+
+    <div class="home">
+       <p class="hLink"><a href="../index.html">Back to Resume</a></p>
+       <p class="ego">Built by Ariel Deschapell</p>
+        <div class="hamburger"><a href="#nav">&equiv;</a></div>
+    </div>
+
+
+    <div class="wrapperNarrow">
+      <h1>Responsive Web Design</h1>
+      <h3>Proof of Competency</h3>
+    </div>
+
+    <img src="images/designIcon.png" id="anchor"/>
+
+  </header>
+
+  <div class="content">
+ 
+
+    <div class="book-image2"></div>
+
+
+    <section class="product-info">
+      <div class="details" >
+        <h2>An Interactive Rundown</h2>
+
+        <p class="center">
+          As I began teaching myself HTML and CSS I quickly discovered the obvious limits of writing static code. I'd spend time perfecting a design on my screen, and it wouldn't look good anywhere else. So I started teaching myself the basics of responsive design out of necessity, and later on decided to get a more complete understanding of its tenants with <a href="www.onemonth.com" target="_blank">One Month's</a> Responsive Design course.
+        </p>
+
+
+            
+           <div class="book-image"></div>
+               
+        <p class="center">
+            I built this website as my personal playground to put these principles into action and demonstrate my competancy in them to potential employers and interested parties. Go ahead, play with this site by expanding and minimizing your browser screen to various dimensions. Keep reading below if you would like a more technical breakdown of some of the individual concepts I've learned, how they work, and how I apply them here.
+        </p>
+
+       
+      </div>
+    </section>
+
+
+    <section class="why">
+      <h2>Markup and CSS</h2>
+       <p>
+          You can review the markup and stylesheet for this page here. I consider all my self made sites creative commons. 
+      </p>
+    </section>
+
+
+    <section class="why">
+      <h2>Education</h2>
+       <p>
+          Largly self taught with supplementary online course.
+      </p>
+          <div class="education">
+              <a href="https://www.accredible.com/10219485" target="_blank"><img src="images/certificate.png"/></a>
+          </div>
+    </section>
+
+    <section class="tenants">
+      <h2>The Three Tenants of Responsive Design</h2>
+
+          <h3 class="tenant">Media Queries</h3>
+            <p>
+              Media Queries are the bread and butter of responsive design. CSS isn't considered a real programming languge (but apparently it might be <a href="http://my-codeworks.com/blog/2015/css3-proven-to-be-turing-complete">Turing Complete</a>?) so I was a bit surprised when I first discovered Media Queries, which are basically your typical "If-Then" programming statement within a CSS stylesheet. Using these conditionals you can create what are called "breakpoints" in a webpage. 
+            </p>
+
+            <p>
+              Simply put, you can tell a browser that when the viewport reaches a certain width, say 1080 pixels, then it should apply certain styling then and only then. This allows you to use a "mobile first" approach. You begin by coding for the smallest screen size, then by placing breakpoints at appropriate viewport widths you can apply additional styling that reshapes the HTML into a progressivly larger screen experince. This allows you to build for any concievable screen size using just one HTML page and a single CSS page. Pretty nifty.
+            </p>
+
+            <p>
+              This page you're currently reading posseses three main breakpoints. As you shrink and stretch the browser window you may spot them by discrete changes in how the content is formatted. As you've noticed the fixed display at the bottom left of your screen shows the current Media Query. Any variation in screen size within those Media Queries is handled by the next two tenants of responsive design. 
+            </p>
+
+
+     
+          <h3 class="tenant">Flexible Images and Media</h3>
+            <p>
+              I was never a big fan of math in school, but if there was one aspect that peaked my interest it was geometry. Shapes were something I could easily vizualize and manipulate in my head, and this kind of problem solving's come back to me now when building responsive web pages. Rather than thinking about how a web page should look in fixed measurements, I'm forced to think about it in more abstract relative and porportional terms. How large do I want this image element to be in relation to this text element for example, and how do I code that so that both scale like I want them to?
+            </p>
+
+
+            <p>
+              Flexible media was the first piece of this puzzle. Flexible media demands that you ditch fixed measurements, like an image having a width of 400 pixels. Instead you would set this measurement to a percentage, such as 40% of the parent HTML container. Containers adjust their size continually in porportion to the browser window, so by setting the width of the image in relation to one you have a responsive image. This applies to page elements of any kind, although to be sure not everything has to or should be responsive in this way. 
+            </p>
+
+    </section>
+  </div>
+
+            <div class="right">
+                <img src="images/ocean.jpg" alt="Image">
+                <p>Flexible Image</p>
+            </div>
+
+  <div class="content">
+    <section class="tenants">
+
+            <p>
+              While simple enough to implement this technique with any single element, on a crowded webpage I found things could get exponentially complicated quickly if everything is sized in relation to everything else. This made maintaning clean CSS and readable HTML pivotal, as well as picking a choosing when this is the best choice. But it also forced me to mentally visualize the ratios and relationships between all the "shapes" on my webpage, just like back in geometry. 
+            </p>
+
+          <h3 class="tenant">Flexible Grids</h3>
+            <p> 
+              In order to accomodate any unqiue screen size within our seperate device experinces (established by our Media Queries), we have to expand on the flexible media concept. Rather than apply porportional values to just individual page elements, we can nest these elements into different sections of a grid and have these sections scale according to the specific screen size. This flexible grid works to fill in any additional space available on whatever device a visitor happens to be using, or shrink space accordingly. This can be best seen in at work in the example below. 
+            </p>
+
+    </section>
+  </div>
+
+
+  <div class="pricing">
+    <h3>Flex Me!</h3>
+
+    <ul class="packages clearfix">
+      <li class="package">
+        <h4>Box One</h4>
+        <div class="price">
+          <br>
+        </div>
+      </li>
+
+      <li class="package">
+        <h4>Box Two</h4>
+        <div class="price">
+        <br>
+        </div>
+      </li>
+
+      <li class="package">
+        <h4>Box Three</h4>
+        <div class="price">
+      <br>
+        </div>
+      </li>
+    </ul>
+  </div>
+
+  <div class="what-you-get clearfix">
+    <div class="item">
+      <img src="http://placeimg.com/240/162/arch" alt="item">
+      <h4>Flex Me!</h4>
+      <p>Lorem </p>
+    </div>
+    <div class="item">
+      <img src="http://placeimg.com/241/163/nature" alt="item">
+      <h4>Flex Me!</h4>
+      <p>Commodi </p>
+    </div>
+    <div class="item">
+      <img src="http://placeimg.com/242/164/arch" alt="item">
+      <h4>Flex Me!</h4>
+      <p>Accusantium, facere inventore?</p>
+    </div>
+    <div class="item">
+      <img src="http://placeimg.com/243/165/nature" alt="item">
+      <h4>Flex Me!</h4>
+      <p>Officiis, accusamus voluptatibus!</p>
+    </div>
+    <div class="item" id="packagesLink">
+      <img src="http://placeimg.com/244/166/arch" alt="item">
+      <h4>Flex Me!</h4>
+      <p>Illum quis sunt maxime?</p>
+    </div>
+    <div class="item">
+      <img src="http://placeimg.com/245/167/nature" alt="item">
+      <h4>Flex Me!</h4>
+      <p>Laborum sit aperiam rerum odio.</p>
+    </div>
+  </div>
+
+  <div class="content">
+      <section>
+
+          <h2>Some Additional Tools and Tricks</h2>
+            <p>
+              Besides the three main tenants, there's various other tools that can be used to further enhance page responsivness.
+            </p> 
+
+            <div class="tools">
+              <h3 class="tenant">Rems</h3>
+                  <p>
+                    Unlike pixels, rems are a unit of measurement that are dependent on the default font size of a page. If the default font size is 16px, then 1 rem = 16px. This is helpful since every browser has its own default font size according to the type of device it is on. A desktop browser may have 16px as its default, and a phone browser might have 11px to account for the smaller screen. So by setting all fixed units to rems rather than pixels, font sizes and other elements will automatically tweak themselves in relation to the browser default on the visitors device.
+                  </p>
+
+              <h3 class="tenant">Srcset</h3>
+                  <p> 
+                    Srcset allows you to declare a set of images to be displayed on different screen resolutions. Perhaps you have a very large and high resolution image that looks great for retina desktop users, but for mobile users you'd like them to see a more cropped and low resolution version of the same image. Srcset allows you to do that by having the browser determine which image resolution can actually be seen on the visitor's device. This has the benefit of not wasting bandwith on a high resolution image that will make no noticable difference on the visitors screen.
+                  </p>
+
+              <h3 class="tenant">Div and Background Image</h3>
+                  <p>
+                    Instead of placing an image in the HTML with an "<img>" tag, you can place a div instead and set the desired image as its background. This has the advantage of being able to swap out that image with more or less cropped versions depending on viewport size using our Media Queries. I demosntrate this with the HTML and CSS logo at the top of this page. 
+                  </p>
+
+              <h3 class="tenant">Set Display Property to None</h3>
+                  <p>
+                    Media Queries allow you to apply radically different stlying (or not) to create different experinces that only take effect at certain screen sizes. This can mean just changing the dimensions of page elements and moving them around. However often times as the screen size gets much smaller it makes sense to get rid of non-essential elements entirly. Simply set the display property for these elements to "none" in the desired section of the CSS (marked by the Media Query conditional) to make it dissapear, and override this when you feel the screen is large enough to warrant accomodating it. I apply this to the blockquote below so that it's only visible at a screen width of 1200px or greater:
+                  </p>
+            </div>
+      </section>
+  </div>
+
+
+            <blockquote class="social-proof clearfix">
+                <span class="quotation-mark">&ldquo;</span>
+              <div class="quote">
+                <p>
+                  Impossible is just a big word thrown around by small men who find it easier to live in the world they've been given than to explore the power they have to change it. 
+                </p>
+                <p>
+                  Impossible is not a fact. It's an opinion. Impossible is not a declaration. It's a dare. Impossible is potential. Impossible is temporary. Impossible is nothing.
+                </p>
+                 <cite>Muhammad Ali</cite>
+              </div>
+            </blockquote>
+
+  <div class="content">
+       <section>
+            <h2>Putting It All Together</h2>
+                <p>
+                  The result of all these applied principles is a fully responsive web page. Media Queries dictate the main device experinces by applying different sections of the stylesheet, while flexible grids and media optimize the page within those frameworks for any screen size. Replacing pixel values with rems further optimizies the viewing experince for various devices, while other tools simply give you greater options and flexibility in designing the various device experinces according to your designated breakpoints.
+                </p>
+                <p>
+                  This originally written rundown coupled with my front end work experince, One Month's certificate of completion for its Responsive Web Design course, and this webpage itself as a working proof of concept, hopefully serve as a concrete example of my competency in these principles as well as my unique work ethic and self direction. 
+                </p>
+  </div>
+
+            <div class="certified"> 
+              <img src="images/certified.jpg"/>
+            </div>
+
+      </section>
+  </div>
+
+  <nav class="small" id="nav">
+ <ul>
+ <li>
+ <a href="#anchor">Back to Top</a>
+ </li>
+ <li>
+ <a href="../index.html">Back to Resume</a>
+ </li>
+ <li>
+ <p>Built by Ariel Deschapell</p>
+ </li>
+ </ul>
+ </nav>
+
+<footer>
+              <p class="counter"></p>
+<footer>
+
+  
+
+</body>
+
+<script
+        src="https://code.jquery.com/jquery-2.2.4.js"
+        integrity="sha256-iT6Q9iMJYuQiMWNd9lDyBUStIq/8PuOW33aOqmvFpqI="
+        crossorigin="anonymous">
+</script>
+<script>
+        $( ".hamburger" ).click(function() {
+         $( "nav.small" ).toggle();
+          });
+</script>
+
+</html>

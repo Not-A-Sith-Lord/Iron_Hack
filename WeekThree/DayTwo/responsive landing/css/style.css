@@ -1,0 +1,687 @@
+* {
+  -moz-box-sizing: border-box; /* Firexfox */
+  -webkit-box-sizing: border-box; /* Safari/Chrome/iOS/Android */
+  box-sizing: border-box; /* IE */
+}
+
+@font-face{
+  font-family:'open';
+  src: url('../fonts/geomanist-regular-webfont.eot');
+  src: url('../fonts/geomanist-regular-webfont.ttf') format('truetype'),
+       url('../fonts/geomanist-regular-webfont.woff') format('woff'),
+       url('../fonts/geomanist-regular-webfont.woff2') format('woff2');
+}
+
+body {
+  font-size: 100%;
+  background: white;
+  font-family: 'open', georgia, times, serif;
+  margin: 0;
+  color: #3e3e3e;
+  line-height: 2rem;
+  margin-bottom: 20rem; 
+
+}
+
+/*
+Text
+*/ 
+
+p {
+  line-height: 2;
+  margin-bottom: 1.375rem;
+} 
+
+h1, h2, h3, h4 {
+  color: #42C0FB;
+  font-family: 'open', Verdana, Geneva, sans-serif;
+  font-weight: bold;
+  margin-bottom: 1rem;
+  text-align: left;
+}
+
+h1 {
+  font-size: 2.5rem;
+  color: white;
+  font-weight: 900;
+  padding-bottom: 1rem;
+  border-bottom: 1px solid white;
+  position: relative;
+  z-index: 0;
+}
+
+header h1, header h3 {
+  font-size: 2.188rem;
+  color: white;
+  font-weight: 700;
+  padding-bottom: 1.2rem;
+  text-align: center;
+  }
+
+header h3 {
+  margin-top: 0rem;
+  font-size: 1.25rem;
+   border-bottom: none;
+}
+
+
+h2 {
+  padding-top: 1rem;
+  font-size: 2rem;
+}
+
+h3 {
+  margin-top: 1.875rem;
+  font-size: 1.3rem;
+  margin-bottom: .6875rem;
+}
+
+h4 {
+  color: black;
+}
+
+
+.pricing h3, .pricing h4, .what-you-get h4 {
+  text-align: center;
+}
+
+/*
+Header and Hero
+*/
+
+.home {
+  padding: 1rem 1.5rem 0 1.5rem;
+  color: white;
+  width:100%;
+  height: 3.5rem;
+  background-color: #d55f51;
+  position: fixed;
+  z-index: 99;
+  opacity: .95;
+
+}
+
+header {
+  background-color: #d55f51;
+  height: 36.3rem;
+  margin: 0;
+  text-align: center;
+  margin-bottom: 10rem;
+   
+}
+
+
+.hLink {
+  margin-top: -.5rem;
+  float: left;
+  opacity: 1;
+  display: none;
+}
+
+.hLink a {
+  color: white;
+  text-decoration: none;
+}
+
+.ego {
+  display: none;
+  float:right;
+  font-size: .8rem;
+  background-color: #d55f51;
+  opacity: 1;
+  
+  
+}
+
+.hamburger {
+  float: right;
+  font-size: 3rem;
+  padding: 0rem .3rem 1rem;
+  margin-top: -.3rem;
+  z-index: 99;
+}
+
+.hamburger a {
+  text-decoration: none;
+  color: white;
+}
+
+
+header img {
+  margin-top: 7rem;
+   width: 12rem; 
+  background-color: #262626;
+  border-radius: 200px;
+  z-index: 1;
+  position: relative;
+}
+
+/* 
+sections 
+*/
+
+.clearfix:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+
+.wrapperNarrow {
+  margin: 0 auto;
+  width:70%;
+  padding-top: 12rem;
+  position: relative;
+  z-index: 1;
+}
+
+
+.content {
+  background: white;
+  padding: .625rem;
+  margin-bottom: 0px;
+}
+
+product-info {
+  display: inline-block;
+}
+
+.content section {
+  padding: 0 1rem 14px 1rem;
+  margin-bottom: 1.5rem;
+}
+
+.content section:last-of-type {
+  border-bottom-width: 0;
+}
+
+c
+.education {
+  display: none;
+  width: 40%;
+  text-align: center;
+  
+}
+
+.education img {
+  width: 100%;
+}
+
+.tenant {
+  
+  color: #d55f51;
+}
+
+.right {
+display: none; 
+}
+
+.left {
+  float: inherit;
+  margin: 0 auto;
+  width: 11.25rem;
+}
+
+blockquote.social-proof {
+  display: none;
+}
+
+.what-you-get .item {
+  text-align: center;
+  margin: 0 1.188rem 1.5rem;
+  padding-bottom: .8125rem;
+  border-bottom: 1px dotted rgb(40, 40, 40);
+  
+}
+
+.what-you-get .item :nth-of-type(2){
+
+}
+
+.what-you-get .item:last-of-type {
+  border-bottom-width: 0;
+}
+
+.item img {
+  width:30%;
+  margin-bottom: .5rem;
+}
+
+.item h4, .item p {
+  margin: .375rem;
+}
+
+.item p {
+  font-size: .8rem;
+}
+
+.pricing {
+  margin-bottom: 2.5rem;
+}
+
+.pricing h3 {
+  padding: 0 .5rem;
+}
+
+.pricing h4 {
+  margin: 0;
+}
+
+.pricing ul{
+  list-style: none;
+  padding-left: 0;
+}
+
+.pricing li {
+  background: #42C0FB;
+  margin: 0;
+  padding: .75rem .5rem;
+  border-bottom: 1px solid gray;
+}
+
+.pricing li h4 {
+  color:white;
+}
+
+.certified {
+    text-align: center;
+}
+
+.certified img {
+  width:16rem;
+}
+
+
+/*
+ * Nav (small)
+*/
+
+nav.small {
+ background: white;
+ position: fixed;
+ top: 52px;
+ left: 0;
+ width:100%;
+ height: 10rem;
+ display:none;
+ z-index: 99;
+ opacity: .95;
+}
+
+nav.small ul {
+ list-style: none;
+ padding: 0;
+ margin: 0;
+}
+
+nav.small li {
+ margin: 0;
+ background: #262626;
+ text-align: center;
+ font-size: 1.5rem;
+}
+
+nav.small li {
+ border-top: 1px solid rgb(180, 180, 180);
+}
+
+nav.small a {
+ padding: 1rem 0;
+ display: block;
+ color: white;
+ text-decoration: none;
+}
+
+nav.small a:active {
+ background: rgb(40, 40, 40);
+}
+
+nav.small p {
+  font-size: .8rem;
+  color: white;
+  padding: 1.4rem 0;
+}
+
+/*
+Footer
+*/
+
+
+footer{
+  position: fixed;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  padding: .5rem;
+  text-align: left;
+  background-color: #d55f51;
+  width: 6.875rem;
+  margin-bottom: 0;
+  border-radius: 0px 10px 0 0;
+  z-index: 3;
+  opacity: .95;
+}
+
+.counter {
+  margin: 0;
+}
+
+.counter:after {
+  content: 'Mobile View';
+  font-size: 1rem;
+  font-style: bold;
+  color: white;
+}
+
+
+@media only screen and (min-width: 556px) {
+
+  header img {
+      margin-top: 8.5rem;
+
+  }
+
+  .book-image2 {
+     background: url('../images/css.jpg');
+    background-size: cover;
+    width:10rem;
+    height:11rem;
+    float: left;
+    margin-right: 2rem;
+  }
+
+    footer {
+      width: 15rem;
+}
+
+  .counter:after {
+  content: 'Media Query One, Tablet View';
+  
+}
+
+  }
+
+@media only screen and (min-width: 863px) {
+
+.ego {
+  display: unset;
+}
+
+.hamburger, nav.small {
+  display: none;
+}
+ 
+.hLink {
+  display: unset;
+}
+
+header h1 {
+  font-size: 3.438rem;
+   padding-bottom: 3rem;
+}
+
+h2 {
+  padding-top: 1rem;
+  font-size: 2rem;
+}
+
+header h3 {
+  font-size: 1.563rem;
+  padding-bottom: 3rem;
+}
+
+header img {
+  margin-top: 3rem;
+  width: unset;
+  width: 14rem; 
+
+}
+
+.content {
+  width: 48.75rem;
+  margin: 0px auto;
+  }
+
+iframe {
+  width: 560px;
+  height: 315px;
+}
+
+
+.right {
+  display: inline-block;
+  margin: 0 auto;
+  width: 100%;
+  height: 5rem;
+  text-align: center;
+  }
+
+.right img {
+  width: 80%;
+  }
+
+.right p {
+  margin-bottom: 3rem;
+  font-size: .8rem;
+  }
+
+.education {
+  display: unset;
+  
+}
+
+.tenants {
+  margin-top: 1.563rem;
+}
+
+
+span.quotation-mark {
+  font-size: 5rem;
+  color: #d55f51;
+  float: left;
+  margin-right: 1.375rem;
+  margin-top: .5rem;
+}
+
+.social-proof .quote {
+  float: left;
+  font-size: 1.2rem;
+  line-height: 1.2;
+  width: 35rem;
+}
+
+.social-proof cite {
+  font-size: .9rem;
+  font-style: italic;
+  float: right;
+}
+
+  
+
+
+  .what-you-get {
+    width: 90%;
+    margin: 0 auto;
+    margin-bottom: 3.125rem;
+  }
+
+  .what-you-get .item {
+    width: 33.3%;
+    margin: 0 0 1.5rem;
+    float: left;
+    border-bottom-width: 0;
+  }
+
+  
+
+   .pricing {
+    width: 74%; 
+    margin: 0 auto 2rem;
+  }
+
+  li.package {
+    float: left;
+    width: 33.3%;
+    border-bottom-width: 0;
+    text-align: center;
+
+  }
+
+  .package h4 {
+    color: white;
+  }
+
+  li.package:nth-of-type(2) {
+    margin-top: .2rem;
+    background: #048ac8;
+    box-shadow: 0 3px 3px 1px #03567d;
+  }
+
+  .item img {
+  width:50%;
+  margin-bottom: .5rem;
+}
+
+
+.certified img {
+  width:20rem;
+}
+
+ footer {
+  width: 16rem;
+}
+
+  .counter:after {
+  content: 'Media Query Two, Desktop View';
+}
+
+}
+/*
+
+@media only screen and (min-width: 1020px) {
+
+  .pricing {
+    width: 74%; 
+    margin: 0 auto 2rem;
+  }
+
+  li.package {
+    float: left;
+    width: 33.3%;
+    border-bottom-width: 0;
+    text-align: center;
+  }
+
+  li.package:nth-of-type(2) {
+    margin-top: .2rem;
+    z-index: 1;
+    -webkit-transform: scale(1.03);
+    transform: scale(1.03);
+    background: rgb(71, 167, 5);
+    box-shadow: 0 3px 3px 1px rgb(42, 90, 9);
+  }
+}
+
+*/
+
+@media only screen and (min-width: 1200px) {
+
+.home {
+  z-index: 0;
+}
+
+.details {
+}
+
+.details h2, .details h4 {
+  margin-left: 19.2rem;
+  
+}
+
+
+header h1 {
+  font-size: 3.875rem;
+
+}
+
+header h3 {
+  font-size: 1.875rem;
+}
+
+h2 {
+  padding-top: 1rem;
+  font-size: 2rem;
+}
+
+
+
+header img {
+  margin-top: 3rem;
+  background-size: 6.25rem 6.25rem;
+
+}
+
+
+.content {
+  width: 48.75rem;
+  }
+
+.book-image2 {
+  background: url('../images/html5-css3.png');
+  background-size: cover;
+  width:19rem;
+  height:12rem;
+  float: left;
+  margin-right: 2rem;
+  }
+
+/*
+   .book-image2 {
+    float:left;
+    padding: 2rem 2rem 1rem 0rem;
+    margin-left: 0;
+    width:23rem;
+  }
+  */
+
+.book-image2 img {
+  width:100%;
+}
+
+
+blockquote.social-proof {
+  display: inherit;
+  width: 41.25rem;
+  margin: 0 auto 2rem;
+}
+
+ 
+
+.what-you-get {
+  width: 63.75rem;
+  margin: 0 auto;
+}
+
+    
+
+.center {
+width: 100%;
+margin-left: 0em;
+}
+
+.certified img {
+width:25rem;
+}
+
+footer {
+  width: 15.75rem;
+}
+
+.counter:after {
+content: 'Media Query Three, Widescreen';
+}
+
+
+
+
+}
