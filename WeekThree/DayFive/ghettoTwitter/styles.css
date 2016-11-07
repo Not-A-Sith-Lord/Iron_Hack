@@ -45,10 +45,10 @@ header ul li {
 
 .user-image{
 	width: 200px;
-	margin: 200px 0 0 130px;
+	margin: 236px 0 0 130px;
 	padding: 5px;
 	background-color: white;
-	border-radius: 8%;
+	border-radius: 9%;
 	position: relative;
 	display: inline-block;
 }
@@ -104,11 +104,29 @@ header ul li {
 	margin-left: -4rem;
 	height: 30rem;
 	background-color: white;
-	padding: 2rem;
+	padding: 1.1rem;
 	margin-top: 1.5rem;
 	border-radius: 10px;
 }
 
+.tweet-links {
+	font-size: 18.5px;
+	border-bottom: 1px solid grey;
+	width: 100%;
+}
+
+.tweet-links a:first-child {
+	font-weight: 700;
+	padding-left: .5rem;
+	text-decoration: none;
+	color: #292f33;
+}
+
+.tweet-links a {
+	padding-left: .2rem;
+	padding-right: 2.8rem;
+	font-weight: 300;
+}
 
 
 
