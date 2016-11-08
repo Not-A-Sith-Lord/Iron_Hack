@@ -1,0 +1,9 @@
+<form action="/placeholder" method="post">
+<label for="number-select">How many paragraphs?</label>
+<input type="number" name="number" id="number-select">
+<input type="radio" name="output" id="paragraphs" value="1">
+<input type="radio" name="output" id="words" value="2">
+<input type="hidden" name="authenticity_token"
+      value="<%= form_authenticity_token %>">
+	<button type="submit">Generate!</button>
+</form>
