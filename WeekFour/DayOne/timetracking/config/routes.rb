@@ -4,6 +4,8 @@ Rails.application.routes.draw do
 
   get '/', to: 'site#home'
 
+  get "/projects", to: 'projects#index'
+
   get "/about", to: "site#about"
 
   get "/contact", to: "site#contact"
