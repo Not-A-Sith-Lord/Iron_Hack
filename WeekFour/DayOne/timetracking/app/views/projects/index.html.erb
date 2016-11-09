@@ -1,7 +1,7 @@
 <h3>DB Wizardry</h3>
 <ul>
 <% @projects.each do |project| %>
-	<li><%= project.name %>
+	<li><%= link_to project.name, project_path(project) %>
 		<% if project.description %>
 			- <%=project.description %>
 			<% end %>
