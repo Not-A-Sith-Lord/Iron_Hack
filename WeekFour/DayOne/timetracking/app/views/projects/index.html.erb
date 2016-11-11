@@ -4,6 +4,7 @@
 	<li><%= link_to project.name, project_path(project) %>
 		<% if project.description %>
 			- <%=project.description %>
+			<%= link_to("Go to time stamps", project_time_entries_path(project)) %>
 			<% end %>
 
 	</li>
@@ -11,3 +12,4 @@
 	<% end %>
 </ul>
 
+<%= link_to "Create a new project", new_project_path %>

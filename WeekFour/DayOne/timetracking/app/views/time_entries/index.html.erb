@@ -1,0 +1,22 @@
+<h1><%= @my_project.name %> </h1>
+
+
+
+<ul>
+	<% @my_entries.each do |entry| %>
+
+	<li>
+	<%= entry.hours %> h
+
+	<%= entry.minutes %> m -
+	<%= entry.date %>
+	
+	<%= link_to "Edit", edit_project_time_entry_path(@my_project, entry) %>
+	<%= link_to "Delete", project_time_entry_path(@my_project, entry), method: "delete", data: {confirm: "Are you sure?"} %>
+
+	</li>
+
+	<% end %>
+</ul>
+
+<%= link_to "Add a new time entry", new_project_time_entry_path %>
