@@ -4,9 +4,10 @@ body {
 }
 
 header {
-	background-color: red;
+	background-color: #33373a;
 	width: 100%;
 	height: 4.5rem;
+	color: white;
 }
 
 header ul {
@@ -21,6 +22,9 @@ header ul li {
 .left-header {
 	margin-left: 6rem;
 	display: inline-block;
+}
+.left-header img{
+	margin-top: 1.3rem;
 }
 
 .right-header {
