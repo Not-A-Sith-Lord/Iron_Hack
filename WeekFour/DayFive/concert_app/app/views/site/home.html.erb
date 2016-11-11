@@ -1,0 +1,12 @@
+<h1>Home page</h1>
+
+<h2>Concerts:</h2>
+<ul>
+	<% @concerts.each do |concert| %>
+	<li>
+	<h3><%= concert.artist %></h3>
+	<h4><%= concert.venue %></h4>
+	<p><%=concert.date%></p>
+	</li>
+	<% end %>
+</ul>
