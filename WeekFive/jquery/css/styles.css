@@ -1,0 +1,15 @@
+.unicorn {
+	color: white;
+    background: linear-gradient(to right, pink, purple);
+}
+
+.uni {
+	/*display: none;*/
+	margin-left: -500px;
+
+}
+
+.uniRun {
+	display: unset;
+	margin-left: 1000px;
+}

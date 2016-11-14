@@ -3,5 +3,9 @@
 <p><%= @concert.description %> </p>
  <%= link_to 'Add Comment', new_concert_comment_path(@concert) %>
 <div class="comments">
-	<p></p>
+<% @comments.each do |comment| %>
+<p><%= comment.content %></p>
+<p><%= comment.name %> </p>
+<% end %>
+	
 </div>
