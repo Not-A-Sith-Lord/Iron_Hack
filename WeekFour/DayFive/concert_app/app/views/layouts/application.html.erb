@@ -3,12 +3,23 @@
   <head>
     <title>ConcertApp</title>
     <%= csrf_meta_tags %>
-
     <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
   </head>
 
   <body>
+
+  <header>
+  <h1><%= link_to "Festival", home_path %> </h1> 
+  <h3>Your destination for music festivals, concerts, and shows</h3>
+  </header>
+
     <%= yield %>
+    <br>
+    
+    <footer>
+    	<h3>Created by Ariel Deschapell</h3>
+    </footer>
+
   </body>
 </html>

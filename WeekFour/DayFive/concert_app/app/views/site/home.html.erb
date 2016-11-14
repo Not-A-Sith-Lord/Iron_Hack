@@ -2,11 +2,13 @@
 
 <h2>Concerts:</h2>
 <ul>
-	<% @concerts.each do |concert| %>
+	<% @this_month.each do |event| %>
 	<li>
-	<h3><%= concert.artist %></h3>
-	<h4><%= concert.venue %></h4>
-	<p><%=concert.date%></p>
+	<h3><%= link_to(event.artist, concert_path(event)) %></h3>
+	<h4><%= event.venue %></h4>
+	<p><%= event.date%></p>
 	</li>
 	<% end %>
 </ul>
+
+ <%= link_to("New Concert", new_concert_path) %>
