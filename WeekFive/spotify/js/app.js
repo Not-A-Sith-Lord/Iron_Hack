@@ -64,6 +64,7 @@ function successAlbum(response){
 		var name = album.name;
 		var pic = album.images[0].url;
 		$(".modal-content").append(name);
+		$(".modal-content").append(`<img src="${pic}" />`);
 
 	});
 }
