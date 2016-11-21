@@ -95,7 +95,7 @@ function successAlbum(response){
 		</li> `;
 
 
-		$(".modal-list").append(albumStuff);
+		// $(".modal-list").append(albumStuff);
 
 	});
 }
@@ -126,3 +126,6 @@ function popup(eventObj){
 
 
 //end of album search
+
+
+
