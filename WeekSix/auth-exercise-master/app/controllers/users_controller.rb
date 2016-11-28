@@ -1,8 +1,10 @@
 class UsersController < ApplicationController
-
+before_action :user_logged_in?, only: [:show, :index]
+before_action :check_if_admin, only: [:index]
+before_action :verify_account, only: [:home, :show]
   # renders the home page
 def home
-  verify_account
+ 
   # @current_user = User.find_by(id: session[:user_id])
 
   # if @current_user == nil
@@ -13,14 +15,12 @@ end
 
 
   def index
-    if session[:user_id]
+
+  
     @users = User.all
 
     render :index
 
-  else 
-    redirect_to "/login"
-  end
   end
 
   # renders the signup form
@@ -33,15 +33,10 @@ end
   end
 
   def show
-      if session[:user_id]
-
+      
       verify_account
-       
 
       render :show
-    else
-      redirect_to "/login"
-    end
   end
 
   # receives form and creates a user from that data
@@ -60,15 +55,10 @@ end
      params.require(:user).permit(:username, :email, :password, :password_confirmation)
   end
 
-  def user_logged_in?
 
-    if session[:user_id]
-      true
-    else
-      false
-    end
+ 
 
-  end
+  
 
 end
 

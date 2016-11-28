@@ -15,6 +15,7 @@ class SessionsController < ApplicationController
 			redirect_to "/login"
 		else 
 			session[:user_id] = user_maybe.id
+			flash[:login_success] = "You have logged in wooooo"
 			redirect_to "/"
 		end
 
