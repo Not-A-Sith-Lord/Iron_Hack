@@ -1,0 +1,17 @@
+<h3>User profile page</h3>
+
+<h4> <%= @the_user.first_name %> <%= @the_user.last_name %> </h4>
+
+<h4> Favorite Comics </h4>
+
+<ul>
+	<% @comics_list.each do |one_comic| %>
+	<li> 
+	<h5> <%= one_comic.title %> </h5>
+	<p>
+		Publisher: 
+		<em> <%= one_comic.publisher %> </em>
+	</p>
+	</li>
+	<% end %>
+</ul>

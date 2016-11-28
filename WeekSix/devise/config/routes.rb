@@ -4,7 +4,7 @@ Rails.application.routes.draw do
  root "main#home"
 
 
-
+resources :users, only: [:show]
 
 
 
